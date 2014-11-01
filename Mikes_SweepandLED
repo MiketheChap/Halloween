@@ -5,9 +5,9 @@
 // This example code is in the public domain.
 
 // This is an adaptatioon of the above by Mike Davis. thanks to the above author.
-// Pin 13 controls the LEDS (maybe next time around try to PWM them?
-// LED also has them going to ground
-// Pin 8 is to the servo, 
+// Pin 13 goes from the skull's 2 eyes and the mouth LEDS (maybe next time around try to PWM them?
+// The other side of the LEDs goes to ground
+// Pin 9 on Arduino Uno --> light orange servo bundle; Uno 5V --> Orange Servo Bundle; Uno GRD --> Brwn Servo Bundle  
 // see here  for servo connections <https://learn.adafruit.com/adafruit-arduino-lesson-14-servo-motors/the-breadboard-layout-for-sweep>
 
 #include <Servo.h> 
