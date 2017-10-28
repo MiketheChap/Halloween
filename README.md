@@ -9,19 +9,19 @@ Basically this repository has code for
 ** The Demon Rat itself has Neopixel eyes and mouth inserted into it's interior. They eyes glow brightly and alternate colors. 
 
 The timing seems to work better on this one. Essentially the process is this:
-* Include servo driver
-* Name your servos
-+ myservo - is the jaw
-+ myservo1 - the neck adjustment
-* Set the servo starting positions = 0 on both: might be interesting to tweak later?
-* Void Setup = Declare and initialize the pins that drive the servos
-+ Pin 9 = jaw
-+ Pin 10 = neck
-* Void Loop - 
-+ Rotate the neck (servo1) 75 degrees and pause
-+ Rotate the jaw (servo) 30 degrees
-+ Rotate the jaw (servo) back to initial position 0 degrees and pause
-+ Rotate the neck (servo1) back to 0 degrees and pause
-* Delay for 10000 ms
-* Restart the Void Loop
+** Include servo driver
+** Name your servos
+  + myservo - is the jaw
+  + myservo1 - the neck adjustment
+** Set the servo starting positions = 0 on both: might be interesting to tweak later?
+** Void Setup = Declare and initialize the pins that drive the servos
+  + Pin 9 = jaw
+  + Pin 10 = neck
+** Void Loop - 
+  + Rotate the neck (servo1) 75 degrees and pause
+  + Rotate the jaw (servo) 30 degrees
+  + Rotate the jaw (servo) back to initial position 0 degrees and pause
+  + Rotate the neck (servo1) back to 0 degrees and pause
+** Delay for 10000 ms
+** Restart the Void Loop
 
