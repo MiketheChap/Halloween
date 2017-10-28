@@ -22,29 +22,29 @@ void setup() {
 }
 
 void loop() {
-  // skull start: servo 1 position 0 delay 45
+  // skull start: servo1 position 0 delay 45
   for (pos1 = 0; pos1 <= 75; pos1 += 1) { // goes from 0 degrees to 90 degrees
     // in steps of 1 degree
     myservo1.write(pos1);              // tell servo to go to position in variable 'pos'
     delay(45);                       // waits 45ms for the servo to reach the position
   }  
-  // jaw start: servo position 0 delay 30
-  for (pos = 0; pos <= 45; pos += 1) { // goes from 0 degrees to 180 degrees
+  // jaw start: servo0 position 0 -> position 30 -> delay 45
+  for (pos = 0; pos <= 30; pos += 1) { // goes from 0 degrees to 30 degrees
     // in steps of 1 degree
     myservo.write(pos);              // tell servo to go to position in variable 'pos'
-    delay(45);                       // waits 15ms for the servo to reach the position
+    delay(45);                       // waits 45ms for the servo to reach the position
   }
-  // jaw end: servo position 180 delay 15
-  for (pos = 30; pos >= 0; pos -= 1) { // goes from 180 degrees to 0 degrees
+  // jaw end: servo0 position 30 -> position  0 -> delay 45
+  for (pos = 30; pos >= 0; pos -= 1) { // goes from 30 degrees to 0 degrees
     myservo.write(pos);              // tell servo to go to position in variable 'pos'
-    delay(45);                       // waits 15ms for the servo to reach the position
+    delay(45);                       // waits 45ms for the servo to reach the position
   }
   // skull end: servo 1 position 90 delay 45
-  for (pos1 = 75; pos1 <= 0; pos1 -= 1) { // goes from 90 degrees to 0 degrees
+  for (pos1 = 75; pos1 <= 0; pos1 -= 1) { // goes from position 75 -> 0 degrees
     // in steps of 1 degree
     myservo1.write(pos1);              // tell servo to go to position in variable 'pos'
     delay(45);                       // waits 45ms for the servo to reach the position
   }
-  delay(10000);
+  delay(10000); // a delay before it starts the whole thing over. N.B. Tweak this for random delay for creep factor?
   return;
 }
