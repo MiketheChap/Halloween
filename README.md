@@ -23,5 +23,5 @@ The timing on Scully seems to work better on this 10/27/2017 update. Essentially
   + Rotate the jaw (servo) 30 degrees
   + Rotate the jaw (servo) back to initial position 0 degrees and pause
   + Rotate the neck (servo1) back to 0 degrees and pause
-** Delay for 10000 ms
-** Restart the Void Loop
+  ** Delay for 10000 ms
+  ** Restart the Void Loop
