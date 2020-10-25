@@ -61,7 +61,7 @@
 //   NEO_KHZ400  400 KHz bitstream (e.g. FLORA pixels)
 //   NEO_KHZ800  800 KHz bitstream (e.g. High Density LED strip)
 int NUM_LEDS = 60;
-int LED_PIN = 4;
+int LED_PIN = 6;
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(NUM_LEDS, LED_PIN, NEO_GRB + NEO_KHZ800);
 
 const int HIGH_STRIKE_LIKELIHOOD = 5;
